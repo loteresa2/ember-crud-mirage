@@ -1,1 +1,12 @@
-{{outlet}}
+<h2>List of all board game</h2>
+
+<ul>
+  {{#each model as |game|}}
+    <li>{{game.title}}, id {{game.id}}</li>
+  {{/each}}
+</ul>
+
+<div>
+  {{input value=newBoardGame placeholder="board game name"}}
+  <button {{action 'createBoardGame'}}>Create</button>
+</div>
