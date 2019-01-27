@@ -3,7 +3,7 @@
 <ul>
   {{#each model as |game|}}
     <li>
-      {{game.title}}, id {{game.id}}, {{#link-to "boardgame.edit" game.id}} Edit {{/link-to}}
+      {{game.title}}, id {{game.id}}, {{#link-to "boardgame.edit" game.id}} Edit {{/link-to}}, <button {{action 'destroyBoardGame' game}}> Destroy</button>
     </li>
   {{/each}}
 </ul>

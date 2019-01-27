@@ -11,6 +11,11 @@ export default Controller.extend({
         this.transitionToRoute('boardgame');
       });
 
+    },
+    destroyBoardGame(model){
+      model.destroyRecord().then(() => {
+        this.transitionToRoute('boardgame');
+      });
     }
   }
 });

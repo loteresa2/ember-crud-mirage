@@ -26,5 +26,6 @@ export default function() {
   this.get('/boardgames');
   this.post('/boardgames');
   this.get('/boardgames/:id');
-  this.put('/boardgames/:id')
+  this.put('/boardgames/:id');
+  this.del('/boardgames/:id');
 }
