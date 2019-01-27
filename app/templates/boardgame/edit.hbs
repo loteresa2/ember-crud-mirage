@@ -1,0 +1,7 @@
+<h1> Edit </h1>
+
+Original value:
+<div>{{model.id}}, {{model.title}} </div>
+
+{{input value=updatedTitle placeholder="new name for board game"}}
+<button {{action 'updateBoardGame' model=model}}>Update</button>
