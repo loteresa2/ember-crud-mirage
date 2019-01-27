@@ -3,14 +3,14 @@
 <ul>
   {{#each model as |game|}}
     <li>
-      {{game.title}}, id {{game.id}}, {{#link-to "boardgame.edit" game.id}} Edit {{/link-to}}, <button {{action 'destroyBoardGame' game}}> Destroy</button>
+      {{game.title}}, id {{game.id}}, {{#link-to "boardgame.edit" game.id}} Edit {{/link-to}}, <button onclick={{action 'destroyBoardGame' game}}> Destroy</button>
     </li>
   {{/each}}
 </ul>
 
 <div>
   {{input value=newBoardGame placeholder="board game name"}}
-  <button {{action 'createBoardGame'}}>Create</button>
+  <button onclick={{action 'createBoardGame'}}>Create</button>
 </div>
 
 
